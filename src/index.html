@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meal-app</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to our Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
+
+
 <body>
-    <h1>first try</h1>
+  <header>
+    <nav>
+      <a href="index.html"> <img class="logo" src="img/vintage-restaurant-menu_23-2147491098.avif"  alt="logo goes here" /></a>
+      <ul>
+        <li> <a href="#" class="total-meals"> (10) meals</a></li>
+        <li> <a href="#"> Meal of the day</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="heading">Welcome to our Menu</h1>
+  <p class="para">Here you can find any meal you like. Just search it here.</p>
+
+  <div class="menu-section">
+    <input type="text" placeholder="Search a meal" class="search-meal" id="search" />
+    <button id="search-btn">Search</button>
+
+    <div id="menu"></div>
+  </div>
+
+  <footer>  </footer>
 </body>
 </html>
