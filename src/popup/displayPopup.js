@@ -1,7 +1,7 @@
 const displayPopup = () => {
     const popupSection = document.getElementById('popup_section');
     const body = document.querySelector('body');
-    const nav = document.getElementById('nav');
+    const nav = document.querySelector('nav');
     const footer = document.querySelector('footer');
     
   
