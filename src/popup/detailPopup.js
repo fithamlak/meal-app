@@ -1,6 +1,5 @@
 import displayPopup from './displayPopup.js';
 
-
 const getdetailsPopup = async (idMeal) => {
   console.log('am clicked');
   const apiUrl = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
@@ -21,9 +20,6 @@ const getdetailsPopup = async (idMeal) => {
   instructions.innerHTML = `<b>Instructions: </b>${dataArray.strInstructions}`;
   mealName.innerHTML = dataArray.strMeal;
   mealImage.src = dataArray.strMealThumb;
-//   const formCnt = document.querySelector('.add_comment');
-//   formCnt.setAttribute('id', idMeal);
-
   displayPopup();
 };
 
