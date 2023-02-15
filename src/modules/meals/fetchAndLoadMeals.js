@@ -1,4 +1,5 @@
 import displayMeal from './displayMeal.js';
+
 import mealContainer from './containerForMeal.js';
 const apiUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
 
