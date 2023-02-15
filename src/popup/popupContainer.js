@@ -18,9 +18,9 @@ const createPopup = () => {
       <section class='load_comments'>
         <h2 id='comments_title'>Comments</h2>
         <div id='previous_comments'>          
-          <ul id="comment_List"></ul>
+          <ul id="comments_List"></ul>
         </div>
-        <h6 id='error__message'></h6>
+        <h6 id='error_message'></h6>
       </section>
       <i id='popup_close' class='fa-solid fa-xmark fa-2x'></i> 
         `;
