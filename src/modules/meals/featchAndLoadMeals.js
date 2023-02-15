@@ -9,13 +9,10 @@ export const getMeals = async () => {
   return meals;
 };
 
-
-const loadMeals = async () => {
+export const loadMeals = async () => {
   const meals = await getMeals();
   meals.forEach((meal) => {
     const cardElement = mealsCountContainer(meal);
     desplayMeal(cardElement, meal);
   });
 };
-
-export default loadMeals;

@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -83,11 +84,6 @@ footer {
 
 .block_scroll {
   overflow: hidden;
-}
-
-.horizontal {
-  display: flex;
-  justify-content: space-around;
 }
 
 .image_section {
