@@ -1,7 +1,8 @@
 import './style.css';
-
-import { fetchAndLoadMeals } from './modules/meals/fetchAndLoadMeals.js';
+import { loadMeals } from './modules/meals/featchAndLoadMeals.js';
+import createPopup from './popup/popupContainer.js';
 
 window.onload = () => {
-  fetchAndLoadMeals();
+  loadMeals();
+  createPopup();
 };
