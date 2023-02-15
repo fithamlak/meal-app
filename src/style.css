@@ -48,3 +48,37 @@ footer {
 .red {
   color: rgb(255, 0, 234);
 }
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+#meals_list {
+  width: 90%;
+  margin-top: 80px;
+  padding-top: 1rem;
+  padding-bottom: 10rem;
+}
+
+.card {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.commentsBtn {
+  border-radius: 1.2rem;
+}
