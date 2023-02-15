@@ -15,13 +15,22 @@ const createPopup = () => {
         <p class='instructions'></p>
       </section>
       <section class='comment_section'>
-      <section class='load_comments'>
-        <h2 id='comments_title'>Comments</h2>
-        <div id='prev_comments'>          
-          <ul id="comments_List"></ul>
-        </div>
-        <h5 id='error_message'></h5>
-      </section>
+        <section class='load_comments'>
+          <h2 id='comments_title'>Comments</h2>
+          <div id='prev_comments'>          
+            <ul id="comments_List"></ul>
+          </div>
+         <h5 id='error_message'></h5>
+        </section>
+        <section >
+          <form id='input_form' class="add_comment" action="">
+            <h2>Add your comment</h2>
+            <input id='name' class='form-control' type="text" placeholder="Your name" autocomplete='off' required>
+            <textarea id='comment' class='form-control' type="text" rows='6' maxlength="50" placeholder="Your insights" autocomplete='off' required></textarea>
+            <button id='comment__button' class='btn btn-outline-primary comments_button' type="submit">Comment</button>
+          </form>
+        </section>
+      </section>  
       <i id='popup_close' class='fa-solid fa-xmark fa-2x'></i> 
         `;
   popupSection.appendChild(popupContainer);
