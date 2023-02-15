@@ -4,6 +4,7 @@ const displayComments = async (idMeals) => {
   const comments = await featchComments(idMeals);
   const commentCntr = document.getElementById('comments_list');
   const container = document.getElementById('error_message');
+  console.log('hi');
   container.textContent = '';
   let prevComments = '';
   if (comments) {
@@ -12,7 +13,7 @@ const displayComments = async (idMeals) => {
         <li class='comment_container'>
           <h5><b>@${e.username}</b></h5>
           <h5>${e.comment}</h5>
-          <h6 class="date__text text-end">${e.creation_date}</h6>
+          <h6 class="dateOf_text text-end">${e.creation_date}</h6>
         </li>
       `;
     });
