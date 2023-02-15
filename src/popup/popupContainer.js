@@ -1,4 +1,4 @@
-
+import closePopup from "./closePopup.js";
 const createPopup = () => {
     const popupSection = document.getElementById('popup_section');
     const popupContainer = document.createElement('section');
@@ -16,9 +16,11 @@ const createPopup = () => {
       <i id='pop__close' class="fa-solid fa-xmark fa-2x"></i>
         `;
     popupSection.appendChild(popupContainer);
-  const closeIcon = document.getElementById('popup__close');
-  closeIcon.addEventListener('click', () => {
-    closePopup();
-  });
+    const closeIcon = document.getElementById('popup__close');
+    closeIcon.addEventListener('click', () => {
+      closePopup();
+    });
 
 };
+
+export default createPopup;
