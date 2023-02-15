@@ -4,7 +4,6 @@ const displayComments = async (idMeals) => {
   const comments = await featchComments(idMeals);
   const commentCntr = document.getElementById('comments_list');
   const container = document.getElementById('error_message');
-  console.log('hi');
   container.textContent = '';
   let prevComments = '';
   if (comments) {
