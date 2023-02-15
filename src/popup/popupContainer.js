@@ -1,4 +1,5 @@
 import closePopup from './closePopup.js';
+import addComments from '../modules/Comments/addComment.js';
 
 const createPopup = () => {
   const popupSection = document.getElementById('popup_section');
@@ -37,6 +38,13 @@ const createPopup = () => {
   const closeIcon = document.getElementById('popup_close');
   closeIcon.addEventListener('click', () => {
     closePopup();
+  });
+  const form = document.getElementById('input_form');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const idMeal = document.querySelector('.category').id;
+    addComments(idMeal);
   });
 };
 
