@@ -1,4 +1,3 @@
-
 const mealContainer = (meal) => {
   const mealElement = document.createElement('li');
   mealElement.classList.add('col-md-6');
