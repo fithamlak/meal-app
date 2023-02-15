@@ -1,4 +1,5 @@
-const mealsCountContainer = (meal) => {
+
+const mealContainer = (meal) => {
   const mealElement = document.createElement('li');
   mealElement.classList.add('col-md-6');
   mealElement.classList.add('col-lg-4');
@@ -14,7 +15,7 @@ const mealsCountContainer = (meal) => {
             <span class="fs-6">${meal.strArea}</span>
           </div>
           <div class="col d-flex justify-content-end">
-            <a href="#" id="like_${meal.idMeal}" class=" flex-column align-items-center d-flex justify-content-center ">
+            <a href="#" id="like_${meal.idMeal}" flex-column align-items-center class="d-flex justify-content-center">
               <i class="fa-regular fa-heart fa-2x"></i>
               <small id="likes_${meal.idMeal}">0 likes</small>
             </a>
@@ -25,7 +26,7 @@ const mealsCountContainer = (meal) => {
             <small>${meal.strCategory}</small>
           </div>
           <div class="col text-end">
-            <button id="comments_${meal.idMeal}" class='btn btn-outline-primary commentsBtn'>Comments</button>
+            <button id="comments_${meal.idMeal}" class='btn comments_button btn-outline-primary'>Comments</button>
           </div>
         </div>
       </div>
@@ -35,4 +36,4 @@ const mealsCountContainer = (meal) => {
   return mealElement;
 };
 
-export default mealsCountContainer;
+export default mealContainer;
