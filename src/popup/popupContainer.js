@@ -14,6 +14,14 @@ const createPopup = () => {
         <h4 class='area'></h4>
         <p class='instructions'></p>
       </section>
+      <section class='comment_section'>
+      <section class='load_comments'>
+        <h2 id='comments_title'>Comments</h2>
+        <div id='previous_comments'>          
+          <ul id="comment_List"></ul>
+        </div>
+        <h6 id='error__message'></h6>
+      </section>
       <i id='popup_close' class='fa-solid fa-xmark fa-2x'></i> 
         `;
   popupSection.appendChild(popupContainer);
