@@ -29,4 +29,15 @@ describe('Test1', () => {
     countComments();
     expect(title.innerHTML).toStrictEqual('(1) Comments ');
   });
+
+  test('countComent should make the title as (5) Comments when I add 4 more elements', () => {
+    container.innerHTML += `
+    <li>Comment</li>
+    <li>Comment</li>
+    <li>Comment</li>
+    <li>Comment</li>
+      `;
+    countComments();
+    expect(title.innerHTML).toStrictEqual('(5) Comments ');
+  });
 });
