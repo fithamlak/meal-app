@@ -18,7 +18,7 @@ const getdetailsPopup = async (idMeal) => {
   instructions.innerHTML = `<b>Instructions: </b>${dataArray.strInstructions}`;
   mealName.innerHTML = dataArray.strMeal;
   mealImage.src = dataArray.strMealThumb;
-  displayComments();
+  displayComments(idMeal);
   displayPopup();
 };
 
