@@ -21,4 +21,12 @@ describe('Test1', () => {
   test('countComent should make the title as (0) Comments when there is no comment element', () => {
     expect(title.innerHTML).toStrictEqual('(0) Comments ');
   });
+
+  test('countComent should make the title as (1) Comments when I add an element', () => {
+    container.innerHTML = `
+    <li>Comment</li>
+    `;
+    countComments();
+    expect(title.innerHTML).toStrictEqual('(1) Comments ');
+  });
 });
