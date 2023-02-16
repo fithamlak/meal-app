@@ -69,6 +69,7 @@ footer {
 
 .comments_button {
   border-radius: 1.2rem;
+  margin-top: 15px;
 }
 
 .display_none {
@@ -122,4 +123,48 @@ footer {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+#prev_comments {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.load_comments {
+  max-width: 400px;
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.comment_container {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  min-width: 320px;
+}
+
+.dateOf_text {
+  align-self: flex-end;
+}
+
+.information {
+  padding: 20px;
+}
+
+.instructions {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (min-width: 600px) {
+  .comment_section {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
