@@ -107,6 +107,7 @@ footer {
   height: 100%;
   backdrop-filter: blur(5px);
   z-index: 1000;
+  overflow: scroll;
 }
 
 #popup_container {
@@ -167,4 +168,30 @@ footer {
     align-items: baseline;
     justify-content: space-around;
   }
+}
+
+.add_comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  padding-bottom: 60px;
+}
+
+#name {
+  margin-bottom: 10px;
+}
+
+#comment {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#comments_List {
+  display: flex;
+  flex-direction: column;
 }
