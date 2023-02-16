@@ -20,6 +20,7 @@ const addComments = async (idMeal) => {
   user.value = '';
   comment.value = '';
   displayComment(idMeal);
+  console.log('ye');
 
   if (!response.ok) {
     const message = `An error has occured: ${response.status}`;

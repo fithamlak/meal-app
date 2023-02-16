@@ -2,7 +2,7 @@ import featchComments from './featchComments.js';
 
 const displayComments = async (idMeals) => {
   const comments = await featchComments(idMeals);
-  const commentCntr = document.getElementById('comments_list');
+  const commentContainer = document.getElementById('comments_List');
   const container = document.getElementById('error_message');
   container.textContent = '';
   let prevComments = '';
@@ -16,7 +16,7 @@ const displayComments = async (idMeals) => {
         </li>
       `;
     });
-    commentCntr.innerHTML = prevComments;
+    commentContainer.innerHTML = prevComments;
   } else {
     container.textContent = 'There are no comments yet for this meal.';
   }

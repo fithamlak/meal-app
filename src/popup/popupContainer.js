@@ -28,7 +28,7 @@ const createPopup = () => {
             <h2>Add your comment</h2>
             <input id='name' class='form-control' type="text" placeholder="Your name" autocomplete='off' required>
             <textarea id='comment' class='form-control' type="text" rows='6' maxlength="50" placeholder="Your insights" autocomplete='off' required></textarea>
-            <button id='comment__button' class='btn btn-outline-primary comments_button' type="submit">Comment</button>
+            <button id='comment__button' class='btn btn-outline-primary commentsBtn' type="submit">Comment</button>
           </form>
         </section>
       </section>  
@@ -38,6 +38,7 @@ const createPopup = () => {
   const closeIcon = document.getElementById('popup_close');
   closeIcon.addEventListener('click', () => {
     closePopup();
+    window.location.reload();
   });
   const form = document.getElementById('input_form');
 
