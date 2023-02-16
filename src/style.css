@@ -186,11 +186,12 @@ footer {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 #comments_List {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
