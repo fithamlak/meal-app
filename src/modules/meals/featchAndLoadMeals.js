@@ -1,6 +1,7 @@
 import mealsCountContainer from './containerForMeal.js';
 import desplayMeal from './desplayMeal.js';
 
+const totalMeals = document.querySelector('.total-meals');
 const apiUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
 
 export const getMeals = async () => {
@@ -15,4 +16,5 @@ export const loadMeals = async () => {
     const cardElement = mealsCountContainer(meal);
     desplayMeal(cardElement, meal);
   });
+  totalMeals.innerHTML = `(${meals.length}) meals`;
 };

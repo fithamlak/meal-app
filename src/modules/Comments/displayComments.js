@@ -1,4 +1,5 @@
 import featchComments from './featchComments.js';
+import countComments from './countComments.js';
 
 const displayComments = async (idMeals) => {
   const comments = await featchComments(idMeals);
@@ -20,6 +21,7 @@ const displayComments = async (idMeals) => {
   } else {
     container.textContent = 'There are no comments yet for this meal.';
   }
+  countComments();
 };
 
 export default displayComments;
