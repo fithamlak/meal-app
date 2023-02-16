@@ -3,16 +3,13 @@ const addLikes = async (idMeal) => {
   const newLike = {
     item_id: idMeal,
   };
-  const response = await fetch(likeUrl, {
+  await fetch(likeUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(newLike),
   });
-  if (response.ok) {
-    window.location.reload();
-  }
 };
 
 export default addLikes;
