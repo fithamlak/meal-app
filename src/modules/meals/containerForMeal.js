@@ -1,5 +1,4 @@
-
-const mealContainer =  (meal,likes) => {
+const mealContainer = (meal, likes) => {
   const mealElement = document.createElement('li');
   mealElement.classList.add('col-md-6');
   mealElement.classList.add('col-lg-4');

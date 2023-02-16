@@ -1,4 +1,4 @@
-import {fetchMealLikes} from '../Likes/fetchLikes.js';
+import { fetchMealLikes } from '../Likes/fetchLikes.js';
 import mealsCountContainer from './containerForMeal.js';
 import desplayMeal from './desplayMeal.js';
 
@@ -15,7 +15,7 @@ export const loadMeals = async () => {
   const meals = await getMeals();
   meals.forEach(async (meal) => {
     const like = await fetchMealLikes(meal.idMeal);
-    const cardElement = mealsCountContainer(meal,like);
+    const cardElement = mealsCountContainer(meal, like);
     desplayMeal(cardElement, meal);
   });
   totalMeals.innerHTML = `(${meals.length}) meals`;

@@ -1,4 +1,4 @@
-const likeUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jcTX0b7AP0QeAh1m307k/likes'
+const likeUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jcTX0b7AP0QeAh1m307k/likes';
 
 const fetchAllLikes = async () => {
   const response = await fetch(likeUrl);
@@ -12,15 +12,15 @@ const fetchAllLikes = async () => {
 const fetchMealLikes = async (mealId) => {
   const allLikes = await fetchAllLikes();
   const mealLikes = [];
-  allLikes.forEach(like => {
-    if(mealId === like.item_id)
-      mealLikes.push(like.likes)
-});
-return mealLikes[0] //reduce function here to sum all likes of a given mealID
-}
-
+  allLikes.forEach((like) => {
+    if (mealId === like.item_id) {
+      mealLikes.push(like.likes);
+    }
+  });
+  return mealLikes[0]; // reduce function here to sum all likes of a given mealID
+};
 
 export {
-   fetchAllLikes,
-  fetchMealLikes
-}
+  fetchAllLikes,
+  fetchMealLikes,
+};
