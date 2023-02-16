@@ -1,0 +1,24 @@
+/**
+ * @jest-environment jsdom
+ */
+
+import countComments from './countComments.js';
+
+describe('Test1', () => {
+// display only empity comment section at first
+  document.body.innerHTML = `
+  <section class='load_comments'>
+    <h2 id='comments_title'>Comments</h2>
+    <div id='prev_comments'>          
+      <ul id="comments_List"></ul>
+    </div>
+    <h5 id='error_message'></h5>
+  </section>
+  `;
+  countComments();
+  const title = document.getElementById('comments_title');
+  const container = document.getElementById('comments_List');
+  test('countComent should make the title as (0) Comments when there is no comment element', () => {
+    expect(title.innerHTML).toStrictEqual('(0) Comments ');
+  });
+});
