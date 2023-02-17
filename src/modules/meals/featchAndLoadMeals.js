@@ -1,8 +1,8 @@
 import { fetchMealLikes } from '../Likes/fetchLikes.js';
 import mealsCountContainer from './containerForMeal.js';
+import countMeals from './countMeals.js';
 import desplayMeal from './desplayMeal.js';
 
-const totalMeals = document.querySelector('.total-meals');
 const apiUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
 
 export const getMeals = async () => {
@@ -17,6 +17,6 @@ export const loadMeals = async () => {
     const like = await fetchMealLikes(meal.idMeal);
     const cardElement = mealsCountContainer(meal, like);
     desplayMeal(cardElement, meal);
+    countMeals();
   });
-  totalMeals.innerHTML = `(${meals.length}) meals`;
 };
