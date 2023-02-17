@@ -12,12 +12,12 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 TV Series ](#-tv-series-)
+- [📖 Meal Menu ](#-tv-series-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
-  - [💻 TV Series ](#-tv-series--1)
+  - [💻 Meal Menu ](#-tv-series--1)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
