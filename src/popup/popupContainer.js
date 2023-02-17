@@ -38,7 +38,6 @@ const createPopup = () => {
   const closeIcon = document.getElementById('popup_close');
   closeIcon.addEventListener('click', () => {
     closePopup();
-    window.location.reload();
   });
   const form = document.getElementById('input_form');
 
