@@ -5,7 +5,7 @@
 ![App Screenshot](./src/img/homepage.PNG)
 
 ### POPUP DETAILS
-![App Screenshot](./src/assets/popup.PNG)
+![App Screenshot](./src/img/poup.PNG)
 
 <!-- TABLE OF CONTENTS -->
 
