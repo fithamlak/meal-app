@@ -14,7 +14,7 @@ const mealContainer = (meal, likes) => {
             <span class="fs-6">${meal.strArea}</span>
           </div>
           <div class="col d-flex justify-content-end">
-            <a href="#" id="like_${meal.idMeal}" flex-column align-items-center class="d-flex justify-content-center">
+            <a href="" id="like_${meal.idMeal}" flex-column align-items-center class="d-flex justify-content-center">
               <i class="fa-regular fa-heart fa-2x"></i>
               <small id="likes_${meal.idMeal}">${likes} likes</small>
             </a>
