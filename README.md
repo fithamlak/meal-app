@@ -88,11 +88,6 @@
 
 <!-- LIVE DEMO -->
 
-## 💻 Meals Menu <a name="vgs-presentation"></a>
-
-> Here you can see our presentation :
-
-- [Presentation Video](https://drive.google.com/file/d/1mUMd5lNd_930_lXULDCsyIJrE5O6oy1j/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
